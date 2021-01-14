@@ -1,6 +1,6 @@
 # ORG LEVEL
 
-resource "google_organization_iam_member" "platform_engineers_org_level" {
+resource "google_project_iam_member" TF_VAR_project {
   for_each = toset([
     "roles/accessapproval.viewer",
     "roles/accesscontextmanager.vpcScTroubleshooterViewer",
