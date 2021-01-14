@@ -187,9 +187,9 @@ resource "google_organization_iam_member" "platform_engineers_org_level" {
     // "roles/storage.legacyBucketReader",
     // "roles/storage.legacyObjectReader",
   ])
-  org_id = var.org_id
+  //org_id = var.org_id
   role   = each.key
-  member = "group:dcsgva-group-platform-engineers@dcsgva-at-gmail.com.a.ongcp.co"
+  member = "group:benmorton8c@gmail.com"
 }
 
 // # PROJECT LEVEL
