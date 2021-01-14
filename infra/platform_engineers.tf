@@ -176,7 +176,7 @@ resource "google_project_iam_member" TF_VAR_project {
   ])
   //org_id = var.org_id
   role   = each.key
-  member = "group:benmorton8c@gmail.com"
+  member = "user:benmorton8c@gmail.com"
 }
 
 // # PROJECT LEVEL
