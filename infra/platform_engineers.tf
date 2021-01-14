@@ -2,17 +2,6 @@
 
 resource "google_project_iam_member" TF_VAR_project {
   for_each = toset([
-    "roles/accessapproval.viewer",
-    "roles/accesscontextmanager.vpcScTroubleshooterViewer",
-    "roles/actions.Viewer",
-    "roles/apigee.analyticsViewer",
-    "roles/appengine.appViewer",
-    "roles/appengine.codeViewer",
-    "roles/automl.viewer",
-    "roles/automlrecommendations.adminViewer",
-    "roles/automlrecommendations.viewer",
-    "roles/bigtable.viewer",
-    "roles/billing.viewer",
     "roles/binaryauthorization.attestorsViewer",
     "roles/binaryauthorization.policyViewer",
     "roles/cloudasset.viewer",
@@ -100,7 +89,6 @@ resource "google_project_iam_member" TF_VAR_project {
     "roles/notebooks.viewer",
     "roles/notebooks.instances.start",
     "roles/notebooks.instances.stop",
-    "roles/orgpolicy.policyViewer",
     "roles/osconfig.assignmentViewer",
     "roles/osconfig.guestPolicyViewer",
     "roles/osconfig.osConfigViewer",
@@ -141,7 +129,6 @@ resource "google_project_iam_member" TF_VAR_project {
     "roles/vpaccess.viewer",
     "roles/androidmanagement.user",
     "roles/bigtable.user",
-    "roles/billing.user",
     "roles/clouddebugger.user",
     "roles/cloudprofiler.user",
     "roles/cloudtrace.user",
