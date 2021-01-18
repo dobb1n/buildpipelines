@@ -1,14 +1,22 @@
+module "project-iam-bindings" {
+  source   = "terraform-google-modules/iam/google//modules/projects_iam"
+  projects = ["vulnerability-analytics"]
+  mode     = "additive"
 
-
-data "google_iam_policy" "admin" {
-  binding {
-    role = "roles/notebooks.instances.start"
-    role = "roles/notebooks.instances.stop"
-    role = "roles/compute.networkViewer"
-    role = "roles/compute.viewer"
-    role = "compute.instances.setLabels"
-    members = [
-      "user:benmorton8c@example.com"
+  bindings = {
+    "roles/compute.networkViewer" = [
+      "user:benmorton8c@example.com",
+    ]
+    "roles/compute.viewer" = [
+      "user:benmorton8c@example.com",
+    ]
+    "roles/compute.instances.setLabels" = [
+      "user:benmorton8c@example.com",
+    ]
+    "roles/notebooks.instances.start" = [
+      "user:benmorton8c@example.com",
+    ]
+    "roles/notebooks.instances.stop" = [
+      "user:benmorton8c@example.com",
     ]
   }
-}
