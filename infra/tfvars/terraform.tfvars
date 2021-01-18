@@ -1,1 +1,4 @@
-project="vulnerability-analytics"
+variable "project" {
+    type = string
+    default = "vulnerability-analytics"
+    }
