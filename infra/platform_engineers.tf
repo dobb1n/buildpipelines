@@ -20,3 +20,4 @@ module "project-iam-bindings" {
       "user:benmorton8c@example.com",
     ]
   }
+}
